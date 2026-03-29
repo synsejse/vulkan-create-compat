@@ -12,6 +12,7 @@
 		"create.catnip.gui.render.EntityBlockRendererMixin",
 		"create.catnip.gui.render.ItemTransformElementRendererMixin",
 		"create.catnip.gui.render.PartialElementRendererMixin",
+		"create.content.kinetics.base.KineticBlockEntityRendererMixin",
 		"create.content.equipment.toolbox.ToolboxScreenMixin",
 		"create.flywheel.backend.engine.MaterialRenderStateMixin",
 		"create.flywheel.backend.engine.indirect.OitFramebufferMixin",
@@ -20,7 +21,7 @@
 		"create.foundation.gui.render.ManualBlockRendererMixin",
 		"create.foundation.gui.render.PressRendererMixin",
 		"create.foundation.gui.render.SpoutRendererMixin",
-		"create.ponder.foundation.WorldSectionElementImplMixin",
+		"create.ponder.foundation.PonderRenderContextMixin",
 		"create.ponder.foundation.render.SceneRendererMixin"
 	],
 	"injectors": {

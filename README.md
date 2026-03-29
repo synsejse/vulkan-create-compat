@@ -12,7 +12,7 @@ For Minecraft Fabric 1.21.10
 - Fixes upside-down Create GUI previews and Ponder scene previews by correcting the final blit UVs used for those render targets.
 - Fixes shrunk Ponder category and tag item icons when they are rendered as simple scaled GUI items.
 - Fixes the toolbox screen's lid preview rendering slightly larger than the rest of the toolbox model.
-- Fixes Ponder translucent scene rendering so moving Create parts still render correctly behind water and other translucent world sections.
+- Fixes Ponder water/translucency issues around Create kinetic previews such as water wheels by rendering kinetic block entities directly into the active Ponder scene buffer instead of relying on the normal queued block-entity path.
 - Prevents Create Fly's old GL framebuffer and OIT composite paths from touching GL-only state when VulkanMod is active.
 
 ## Scope
