@@ -1,0 +1,32 @@
+{
+	"required": true,
+	"package": "com.synsenetwork.vcc.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"create.catnip.gui.UIRenderHelperCustomRenderTargetMixin",
+		"create.catnip.gui.element.AbstractRenderElementAccessor",
+		"create.catnip.gui.element.GuiItemRenderBuilderAccessor",
+		"create.catnip.gui.element.GuiItemRenderBuilderMixin",
+		"create.catnip.gui.element.GuiRenderBuilderAccessor",
+		"create.catnip.gui.render.BlockTransformElementRendererMixin",
+		"create.catnip.gui.render.EntityBlockRendererMixin",
+		"create.catnip.gui.render.ItemTransformElementRendererMixin",
+		"create.catnip.gui.render.PartialElementRendererMixin",
+		"create.content.equipment.toolbox.ToolboxScreenMixin",
+		"create.flywheel.backend.engine.MaterialRenderStateMixin",
+		"create.flywheel.backend.engine.indirect.OitFramebufferMixin",
+		"create.foundation.gui.render.DeployerRendererMixin",
+		"create.foundation.gui.render.DrainRendererMixin",
+		"create.foundation.gui.render.ManualBlockRendererMixin",
+		"create.foundation.gui.render.PressRendererMixin",
+		"create.foundation.gui.render.SpoutRendererMixin",
+		"create.ponder.foundation.PonderSceneMixin",
+		"create.ponder.foundation.render.SceneRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

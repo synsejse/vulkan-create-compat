@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "vulkan-create-compat",
+	"version": "${version}",
+	"name": "vulkan-create-compat",
+	"description": "Compatibility fixes for using VulkanMod and Create Fly together.",
+	"authors": [
+		"Kristián Kekeš"
+	],
+	"contact": {
+		"homepage": "https://github.com/synsejse/vulkan-create-compat",
+		"sources": "https://github.com/synsejse/vulkan-create-compat",
+		"issues": "https://github.com/synsejse/vulkan-create-compat/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vulkan-create-compat/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.synsenetwork.vcc.VulkancreatecompatClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "vulkan-create-compat.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.5",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*",
+		"create": "*",
+		"vulkanmod": "*"
+	}
+}
