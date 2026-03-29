@@ -1,11 +1,12 @@
 package com.synsenetwork.vcc.mixin.client.create.content.equipment.toolbox;
 
+import com.zurrtum.create.client.content.equipment.toolbox.ToolboxScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
 // Fixes the toolbox lid partial preview appearing slightly oversized relative to the box body.
-@Mixin(targets = "com.zurrtum.create.client.content.equipment.toolbox.ToolboxScreen")
+@Mixin(ToolboxScreen.class)
 public class ToolboxScreenMixin {
 	@ModifyArg(
 		method = "init",

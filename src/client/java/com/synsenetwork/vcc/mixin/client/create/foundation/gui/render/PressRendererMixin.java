@@ -1,12 +1,13 @@
 package com.synsenetwork.vcc.mixin.client.create.foundation.gui.render;
 
+import com.zurrtum.create.client.foundation.gui.render.PressRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 
 // Fixes upside-down press GUI previews by flipping the final blit UVs.
-@Mixin(targets = "com.zurrtum.create.client.foundation.gui.render.PressRenderer")
+@Mixin(PressRenderer.class)
 public class PressRendererMixin {
     @ModifyArgs(
         method = "render(Lcom/zurrtum/create/client/foundation/gui/render/PressRenderState;Lnet/minecraft/client/gui/render/state/GuiRenderState;I)V",

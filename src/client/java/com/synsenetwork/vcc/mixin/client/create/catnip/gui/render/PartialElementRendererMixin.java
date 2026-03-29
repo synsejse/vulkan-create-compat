@@ -1,12 +1,13 @@
 package com.synsenetwork.vcc.mixin.client.create.catnip.gui.render;
 
+import com.zurrtum.create.client.catnip.gui.render.PartialElementRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 
 // Fixes upside-down partial-model GUI previews by flipping the final blit UVs.
-@Mixin(targets = "com.zurrtum.create.client.catnip.gui.render.PartialElementRenderer")
+@Mixin(PartialElementRenderer.class)
 public class PartialElementRendererMixin {
 	@ModifyArgs(
 		method = "render(Lcom/zurrtum/create/client/catnip/gui/render/PartialRenderState;Lnet/minecraft/client/gui/render/state/GuiRenderState;I)V",

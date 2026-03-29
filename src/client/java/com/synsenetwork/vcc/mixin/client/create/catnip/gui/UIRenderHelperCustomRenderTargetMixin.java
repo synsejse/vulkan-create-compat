@@ -6,6 +6,7 @@ import com.mojang.blaze3d.textures.AddressMode;
 import com.mojang.blaze3d.textures.FilterMode;
 import com.mojang.blaze3d.textures.GpuTexture;
 import com.mojang.blaze3d.textures.TextureFormat;
+import com.zurrtum.create.client.catnip.gui.UIRenderHelper;
 import net.minecraft.client.gl.Framebuffer;
 
 import java.util.Objects;
@@ -15,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 // Fixes the Create Fly render-target crash by creating backend-neutral GPU textures.
-@Mixin(targets = "com.zurrtum.create.client.catnip.gui.UIRenderHelper$CustomRenderTarget")
+@Mixin(UIRenderHelper.CustomRenderTarget.class)
 public abstract class UIRenderHelperCustomRenderTargetMixin extends Framebuffer {
 	protected UIRenderHelperCustomRenderTargetMixin(String label, boolean useDepth) {
 		super(label, useDepth);

@@ -1,12 +1,13 @@
 package com.synsenetwork.vcc.mixin.client.create.ponder.foundation.render;
 
+import com.zurrtum.create.client.ponder.foundation.render.SceneRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 import org.spongepowered.asm.mixin.injection.At;
 
 // Fixes upside-down Ponder scene previews by flipping the final scene blit UVs.
-@Mixin(targets = "com.zurrtum.create.client.ponder.foundation.render.SceneRenderer")
+@Mixin(SceneRenderer.class)
 public class SceneRendererMixin {
 	@ModifyArgs(
 		method = "render(Lcom/zurrtum/create/client/ponder/foundation/render/SceneRenderState;Lnet/minecraft/client/gui/render/state/GuiRenderState;I)V",

@@ -20,7 +20,7 @@
 		"create.foundation.gui.render.ManualBlockRendererMixin",
 		"create.foundation.gui.render.PressRendererMixin",
 		"create.foundation.gui.render.SpoutRendererMixin",
-		"create.ponder.foundation.PonderSceneMixin",
+		"create.ponder.foundation.WorldSectionElementImplMixin",
 		"create.ponder.foundation.render.SceneRendererMixin"
 	],
 	"injectors": {

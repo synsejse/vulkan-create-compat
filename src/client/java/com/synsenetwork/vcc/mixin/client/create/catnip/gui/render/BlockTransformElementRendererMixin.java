@@ -1,12 +1,13 @@
 package com.synsenetwork.vcc.mixin.client.create.catnip.gui.render;
 
+import com.zurrtum.create.client.catnip.gui.render.BlockTransformElementRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 
 // Fixes upside-down block-state GUI previews by flipping the final blit UVs.
-@Mixin(targets = "com.zurrtum.create.client.catnip.gui.render.BlockTransformElementRenderer")
+@Mixin(BlockTransformElementRenderer.class)
 public class BlockTransformElementRendererMixin {
 	@ModifyArgs(
 		method = "render(Lcom/zurrtum/create/client/catnip/gui/render/BlockTransformRenderState;Lnet/minecraft/client/gui/render/state/GuiRenderState;I)V",
