@@ -12,7 +12,7 @@
 		"sources": "https://github.com/synsejse/vulkan-create-compat",
 		"issues": "https://github.com/synsejse/vulkan-create-compat/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/vulkan-create-compat/icon.png",
 	"environment": "client",
 	"entrypoints": {
